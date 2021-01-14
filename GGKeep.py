@@ -5,8 +5,7 @@ class GkeepApis:
   def __init__(self):
     try:
       self.keep = gkeepapi.Keep()
-      #self.keep.login('dakinowebma@gmail.com','bifknylqesbazfuu')
-      self.keep.login('huksandolee@gmail.com','whuuuryydboethlf')
+      self.keep.login(settings.keep_user, settings.keep_pswd)
     except Exception as e:
       logging.error(e)
       raise e

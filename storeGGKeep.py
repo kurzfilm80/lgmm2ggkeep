@@ -8,7 +8,7 @@ class storeGGKeep:
 
     try:
       keep = gkeepapi.Keep()
-      keep.login('dakinowebma@gmail.com','bifknylqesbazfuu')
+      keep.login(settings.keep_user, settings.keep_pswd)
       note = keep.createNote('lgPhone', 'hello world')
       note.pinned = True
       note.color = gkeepapi.node.ColorValue.Red

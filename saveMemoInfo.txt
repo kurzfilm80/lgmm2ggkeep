@@ -1,0 +1,6 @@
+# SaveMemeInfo 처리
+  # XML 파싱 - 입력 자료 구성
+  # <Title Encoding="base63"><![CDATA[]]></Title>
+  # <Data Encoding="base63"><![CDATA[...]]></Data>
+    # html <note><text></text></note>
+  # <ModifiedTime>20160914092049</ModifiedTime
